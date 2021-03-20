@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>Funky Fresh Light and Sounds</h1>
+    
+    <p>
+      Welcome to this funky game! Repeat back the pattern by pressing the below buttons.
+    </p>
+    
+    <button id="startBtn" onclick="startGame()">START</button>
+    <button id="stopBtn" onclick="stopGame()" class="hidden" >END</button>
+    
+    <div id="gameButtonArea">
+      <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()"><img id="button1img" src="https://cdn.glitch.com/2472c902-7f3b-4a0e-94b6-f1328c4bcbbf%2Fhp1.png?v=1616269125323" alt="button1img"/></button>
+      <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()"><img id="button2img" src="https://cdn.glitch.com/2472c902-7f3b-4a0e-94b6-f1328c4bcbbf%2Fhp2.png?v=1616269059340" alt="button2img"/></button>
+      <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()"><img id="button3img" src="https://cdn.glitch.com/2472c902-7f3b-4a0e-94b6-f1328c4bcbbf%2Fhp3.webp?v=1616268633049" alt="button3img"/></button>
+      <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()"><img id="button4img" src="https://cdn.glitch.com/2472c902-7f3b-4a0e-94b6-f1328c4bcbbf%2Fhp4.png?v=1616268634473" alt="button4img"/></button>
+      <button id="button5" onclick="guess(5)" onmousedown="startTone(5)" onmouseup="stopTone()"><img id="button5img" src="https://cdn.glitch.com/2472c902-7f3b-4a0e-94b6-f1328c4bcbbf%2Fhp6.png?v=1616268635658" alt="button5img"/></button>
+      <button id="button6" onclick="guess(6)" onmousedown="startTone(6)" onmouseup="stopTone()"><img id="button6img" src="https://cdn.glitch.com/2472c902-7f3b-4a0e-94b6-f1328c4bcbbf%2Fhp7.png?v=1616268633603" alt="button6img"/></button>
+    </div>
+
+
+  </body>
+</html>
